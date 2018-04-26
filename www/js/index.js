@@ -149,7 +149,7 @@ var app = {
         $dataContainer.append("Joya vieja");
 
         var result = JSON.parse(data);
-        $dataContainer.append(result);
+        $dataContainer.append(result.rumbo);
        
         if ($('#terminal input[name=autoscroll]').is(':checked')) {
             $dataContainer.scrollTop($dataContainer[0].scrollHeight - $dataContainer.height());
