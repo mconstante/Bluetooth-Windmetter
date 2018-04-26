@@ -146,8 +146,9 @@ var app = {
             data = '<span class="out">' + data + '</span>';
         }
 
-        data = JSON.parse(data);
+       $dataContainer.append("Joya vieja");
 
+        data = JSON.parse(data);
         $dataContainer.append(data);
 
         if ($('#terminal input[name=autoscroll]').is(':checked')) {
