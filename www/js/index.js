@@ -148,8 +148,10 @@ var app = {
 
         $dataContainer.append("Joya vieja");
 
-        var result = JSON.parse(data);
-        $dataContainer.append(result.longitud);
+        var result = JSON.parse(data,function (key, value));
+        if (key == "longitud") {
+            $dataContainer.append(value);
+        }
 
         if ($('#terminal input[name=autoscroll]').is(':checked')) {
             $dataContainer.scrollTop($dataContainer[0].scrollHeight - $dataContainer.height());
