@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "Cordova Bluetooth Terminal",
-  "short_name": "Cordova Bluetooth Terminal",
+  "name": "Bluetooth Windmetter",
+  "short_name": "Bluetooth Windmetter",
   "version": "rocks.loginov.cordova_bluetooth_terminal",
   "description": "Simple app for communication with devices via bluetooth",
-  "author": "Danila Loginov",
+  "author": "Martin Constante",
   "icons": [],
   "start_url": "index.html"
 }

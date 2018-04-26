@@ -2,7 +2,7 @@
 <widget id="rocks.loginov.cordova_bluetooth_terminal" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Bluetooth Windmetter</name>
     <description>Simple app for communication with devices via bluetooth</description>
-    <author email="martin.constante@gmail.com" >Martin Constante</author>
+    <author email="martin.constante@gmail.com">Martin Constante</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -18,7 +18,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <engine name="android" spec="^6.4.0" />
     <plugin name="cordova-plugin-bluetooth-serial" spec="^0.4.7" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
-    <engine name="android" spec="^6.4.0" />
 </widget>
