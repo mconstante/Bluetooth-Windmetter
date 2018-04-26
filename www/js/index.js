@@ -148,7 +148,7 @@ var app = {
 
         $dataContainer.append("Joya vieja");
 
-        var result = str.split(",");
+        var result = data.split(",");
         var rumbo =result[2];
         $dataContainer.append(rumbo);
        
