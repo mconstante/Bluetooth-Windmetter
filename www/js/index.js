@@ -157,7 +157,13 @@ var app = {
         var direccion =result[4];
         var intensidad =result[5];
         $dataContainer.append(rumbo);
-       
+        $('.flecha').css ({
+            'transform':'rotate('+direccion+'deg)'
+        });
+        $('.rosa').css ({
+            'transform':'rotate('+rumbo+'deg)'
+        });
+
         if ($('#terminal input[name=autoscroll]').is(':checked')) {
             $dataContainer.scrollTop($dataContainer[0].scrollHeight - $dataContainer.height());
         }
