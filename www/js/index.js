@@ -149,7 +149,13 @@ var app = {
         $dataContainer.append("Joya vieja");
 
         var result = data.split(",");
+
+        var latitud =result[0];
+        var longitud =result[1];
         var rumbo =result[2];
+        var velocidad =result[3];
+        var direccion =result[4];
+        var intensidad =result[5];
         $dataContainer.append(rumbo);
        
         if ($('#terminal input[name=autoscroll]').is(':checked')) {

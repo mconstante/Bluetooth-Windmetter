@@ -1,7 +1,3 @@
-/**
- * Created by Danila Loginov, December 23, 2016
- * https://github.com/1oginov/Cordova-Bluetooth-Terminal
- */
 
 html {
     height: 100%;
@@ -90,3 +86,34 @@ button, input, textarea {
 #terminal form input[type=text] {
     min-width: 0;
 }
+
+.rosa {
+    background:url(../img/rosa004.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:-39px;
+    top:117px;
+    height:899px;               
+    width:899px;                
+    transform: rotate(270deg);
+}
+
+.interior {
+    background:url(../img/interior.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:110px;
+    top:266px;
+    height:596px;                   /* text area height */
+    width:596px;                   /* text area width */
+    text-align:center;
+                                   /* offset horizontal: half of text area width */
+}
+
+.flecha {
+    background:url(../img/aguja.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:110px;
+    top:266px;
+    height:600px;              
+    width:600px;               
+    transform: rotate(270deg);    
+ }
