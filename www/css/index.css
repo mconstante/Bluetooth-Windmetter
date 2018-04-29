@@ -42,13 +42,14 @@ button, input, textarea {
     right: 0;
     bottom: 0;
     left: 0;
-
+    height:60px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
 
     overflow: auto;
+
 }
 
 .state > * {
@@ -105,6 +106,34 @@ button, input, textarea {
 #terminal form input[type=text] {
     min-width: 0;
 }
+
+.display {
+    position: absolute;
+    margin-top: 60px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:100px;
+    width: 800px;
+}
+
+.velocidad {
+    position: absolute;
+    margin-left: 20px;
+    font: 35px Helvetica, sans-serif;
+    fontcolor: #FFFEEE;
+    font-weight: bold;
+ }
+
+.intensidad {
+    position: absolute;
+    margin-left: 400px;
+    font: 35px Helvetica, sans-serif;
+    fontcolor: #FFFEEE;
+    font-weight: bold;    
+ }
+
 
 .rosa {
     background:url(../img/rosa004.png) no-repeat center top; /* 170px x 200px */

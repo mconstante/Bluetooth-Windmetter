@@ -9,6 +9,8 @@ var app = {
 
     initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        $('#data_velocidad').text("0");
+        $('#data_intensidad').text("0");
     },
 
     onDeviceReady: function () {
@@ -66,7 +68,6 @@ var app = {
         var $selectedDevice = $('#selected-device');
         $selectedDevice.find('.name').text(name);
         $selectedDevice.find('.address').text(address);
-
         app.connect(address);
     },
 
@@ -146,7 +147,26 @@ var app = {
             data = '<span class="out">' + data + '</span>';
         }
 
-        $dataContainer.append(data);
+        $dataContainer.append("Joya vieja");
+
+        var result = data.split(",");
+
+        var latitud =result[0];
+        var longitud =result[1];
+        var rumbo =result[2];
+        var velocidad =result[3];
+        var direccion =result[4];
+        var intensidad =result[5];
+        $dataContainer.append(rumbo);
+        $('.flecha').css ({
+            'transform':'rotate('+direccion+'deg)'
+        });
+        $('.rosa').css ({
+            'transform':'rotate('+rumbo+'deg)'
+        });
+        $('#data_velocidad').text(velocidad);
+        $('#data_intensidad').text(intensidad);
+
 
         if ($('#terminal input[name=autoscroll]').is(':checked')) {
             $dataContainer.scrollTop($dataContainer[0].scrollHeight - $dataContainer.height());

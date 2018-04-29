@@ -9,6 +9,8 @@ var app = {
 
     initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        $('#data_velocidad').text("0");
+        $('#data_intensidad').text("0");
     },
 
     onDeviceReady: function () {
@@ -66,7 +68,6 @@ var app = {
         var $selectedDevice = $('#selected-device');
         $selectedDevice.find('.name').text(name);
         $selectedDevice.find('.address').text(address);
-
         app.connect(address);
     },
 
@@ -163,6 +164,9 @@ var app = {
         $('.rosa').css ({
             'transform':'rotate('+rumbo+'deg)'
         });
+        $('#data_velocidad').text(velocidad);
+        $('#data_intensidad').text(intensidad);
+
 
         if ($('#terminal input[name=autoscroll]').is(':checked')) {
             $dataContainer.scrollTop($dataContainer[0].scrollHeight - $dataContainer.height());
