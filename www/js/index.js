@@ -165,7 +165,7 @@ var app = {
             'transform':'rotate('+rumbo+'deg)'
         });
         $('#data_velocidad').text(velocidad);
-        $('#data_intensidad').text(velocidad);
+        $('#data_intensidad').text(intensidad);
 
 
         if ($('#terminal input[name=autoscroll]').is(':checked')) {
