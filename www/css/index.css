@@ -122,15 +122,15 @@ button, input, textarea {
     position: absolute;
     margin-left: 20px;
     font: 35px Helvetica, sans-serif;
-    fontcolor: #FFFEEE;
+    color: #000FFF;
     font-weight: bold;
  }
 
 .intensidad {
     position: absolute;
-    margin-left: 400px;
+    margin-left: 300px;
     font: 35px Helvetica, sans-serif;
-    fontcolor: #FFFEEE;
+    color: #000FFF;
     font-weight: bold;    
  }
 
